@@ -15,7 +15,7 @@
 	// Fixed nav
 	$(window).on('scroll', function() {
 		var wScroll = $(this).scrollTop();
-		wScroll > 50 ? $('#header').addClass('fixed-navbar') : $('#header').removeClass('fixed-navbar');
+		if (wScroll > 50)  {$('#header').addClass('fixed-navbar');$('#header').removeClass('transparent-navbar')} else {$('#header').removeClass('fixed-navbar');$('#header').addClass('transparent-navbar')};
 	});
 
 	// Smooth scroll
@@ -45,6 +45,10 @@
 			});
 		});
 	});
+
+       // Fix long speaker names
+	$('.speaker .speaker-content>h2+h2').prev().css({"margin": "0px 0px 0px"});
+        $('.speaker .speaker-contentg>h2+h2').prev().css({"margin": "0px 0px 0px"});
 
 	// Galery Owl
 	$('#galery-owl').owlCarousel({

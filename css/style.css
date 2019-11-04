@@ -21,6 +21,7 @@ ABOUT
 GALERY
 SPEAKERS
 EVENTS
+REGISTRATION
 SPONSORS
 CONTACT
 CTA
@@ -83,9 +84,10 @@ a:hover, a:focus {
 }
 
 ul, ol {
-  margin: 0;
+  margin: 0px;
+  margin-left: 50px;
   padding: 0;
-  list-style: none
+  list-style: circle
 }
 
 .main-btn {
@@ -200,6 +202,7 @@ textarea.input {
   display: none;
 }
 
+
 .logo-home {
     max-width:100%;
     height:auto;
@@ -208,7 +211,7 @@ textarea.input {
 	
 }
 
-#header.fixed-navbar .navbar-brand .logo .logo-alt-img {
+#header.transparent-navbar.fixed-navbar .navbar-brand .logo .logo-alt-img {
   display: none;
 }
 
@@ -286,6 +289,7 @@ textarea.input {
   color: #FFF;
 }
 
+
 #header.fixed-navbar .main-nav li a {
   color: black;
 }
@@ -325,8 +329,29 @@ textarea.input {
   color: #FFF;
 }
 
+#header.transparent-navbar .dropdown-menu {
+  background-color: rgba(0,0,0,60);
+}
+
 #header.fixed-navbar .navbar-toggle {
   color: #444 !important;
+}
+
+#header .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem !important;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: center !important;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.transparent-navbar .dropdown-toggle {
+  color =
 }
 
 /* Mobile nav */
@@ -367,6 +392,7 @@ textarea.input {
   position: relative;
 }
 
+
 #home .home-wrapper {
   position: absolute;
   top: 50%;
@@ -376,6 +402,7 @@ textarea.input {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  padding: 80px 0px 0px
 }
 
 .home-content h1 {
@@ -489,7 +516,7 @@ textarea.input {
 
 .speaker {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .speaker:after {
@@ -522,7 +549,7 @@ textarea.input {
 
 .speaker .speaker-content {
   position: relative;
-  padding: 30px;
+  padding: 10px;
   background: #5eac50;
   text-align: right;
   z-index: 20;
@@ -530,7 +557,7 @@ textarea.input {
 
 .speaker .speaker-contentg {
   position: relative;
-  padding: 30px;
+  padding: 10px;
   background: #53bdec;
   text-align: right;
   z-index: 20;
@@ -538,6 +565,13 @@ textarea.input {
 
 .speaker .speaker-contentg>h2 {
   color: #FFF;
+  font-size:26px;
+}
+
+
+.speaker .speaker-contentg>h3 {
+  color: #FFF;
+  font-size:16px;
 }
 
 .speaker .speaker-contentg>span {
@@ -547,10 +581,33 @@ textarea.input {
 
 .speaker .speaker-content>h2 {
   color: #FFF;
+  font-size:26px;
 }
+
+/* correcting long names*/
+
+.speaker .speaker-content>h2+h2 {
+  margin:0px 0px 0px;
+}
+.speaker .speaker-content>h2+h2+h3 {
+  margin:0px 0px 0px;
+}
+
+.speaker .speaker-contentg>h2+h2 {
+  margin:0px 0px 0px;
+}
+.speaker .speaker-contentg>h2+h2+h3 {
+  margin:0px 0px 0px;
+}
+
 
 .speaker .speaker-content>span {
   color: #fff;
+}
+
+.speaker .speaker-content>h3 {
+  color: #FFF;
+  font-size:16px;
 }
 
 .speaker .speaker-social {
@@ -700,8 +757,14 @@ textarea.input {
   position: relative;
 }
 
+.event-content h3 {
+  color: #444;
+}
+
+
+
 .event+.event {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .event:after {
@@ -732,8 +795,8 @@ textarea.input {
   position: absolute;
   left: 0;
   top: 0;
-  width: 120px;
-  height: 120px;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
   background: #53bdec;
   z-index: 10;
@@ -769,20 +832,22 @@ textarea.input {
   color: #FFF;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .event .event-day .year {
   color: #FFF;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 18px;
 }
+
 
 .event .event-content {
   padding-left: 160px;
   min-height: 120px;
 }
+
 
 .event .event-time {
   font-size: 14px;
@@ -802,6 +867,28 @@ textarea.input {
 }
 
 /*=========================================================
+	Registration
+===========================================================*/
+.registration p{
+   color:#ccc;
+}
+
+.registration h2{
+   color:#ccc;
+}
+
+.registration h4{
+   color:#ccc;
+}
+
+/*=========================================================
+	Registration
+===========================================================*/
+.section-bg+.container{
+color: #ccc;
+}
+
+/*=========================================================
 	SPONSORS
 ===========================================================*/
 
@@ -818,7 +905,9 @@ textarea.input {
 }
 
 .sponsor>img {
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 110px;
 }
 
 /*=========================================================
