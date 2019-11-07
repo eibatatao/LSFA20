@@ -888,6 +888,25 @@ textarea.input {
 color: #ccc;
 }
 
+.section-bg+.container a {
+  color: #999;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+.section-bg+.container a:hover,a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #ee3d37;
+}
+color: #ccc;
+}
+
+.section-bg+.container>h3,h2,h1{
+color: #dd0a37;
+}
+
+
 /*=========================================================
 	SPONSORS
 ===========================================================*/
