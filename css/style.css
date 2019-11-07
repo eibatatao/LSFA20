@@ -517,6 +517,7 @@ textarea.input {
 .speaker {
   position: relative;
   margin-bottom: 10px;
+  opacity:0.6;
 }
 
 .speaker:after {
@@ -532,8 +533,8 @@ textarea.input {
   transition: 0.3s all;
 }
 
-.speaker:hover:after {
-  opacity: 0.8;
+.speaker:hover {
+  opacity: 1;
 }
 
 .speaker .speaker-img>img {
@@ -549,7 +550,7 @@ textarea.input {
 
 .speaker .speaker-content {
   position: relative;
-  padding: 10px;
+  padding: 20px;
   background: #5eac50;
   text-align: right;
   z-index: 20;
@@ -557,7 +558,7 @@ textarea.input {
 
 .speaker .speaker-contentg {
   position: relative;
-  padding: 10px;
+  padding: 20px;
   background: #53bdec;
   text-align: right;
   z-index: 20;
