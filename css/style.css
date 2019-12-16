@@ -219,6 +219,13 @@ textarea.input {
   display: none;
 }
 
+#header .container {
+  width: auto;
+  margin-left:15px;
+  margin-right:15px;
+}
+
+
 /*=========================================================
 	NAVIGATION
 ===========================================================*/
@@ -860,6 +867,13 @@ textarea.input {
 
 .event .event-content a {
   color: #dd0a37;
+}
+
+.event .event-content h3,h4{
+  color: #ccc}
+
+.event .event-title {
+  color: #ccc;
 }
 
 .download-btn {
