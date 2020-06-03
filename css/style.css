@@ -28,6 +28,7 @@ CTA
 FOOTER
 BLOG
 RESPONSIVE
+ANNOUNCEMENT MODALS
 ------------------------------------*/
 
 /*=========================================================
@@ -1228,3 +1229,21 @@ color: #dd0a37;
     width: 100%;
   }
 }
+
+
+/*=========================================================
+	RESPONSIVE
+===========================================================*/
+.announcement.modal {
+  top:80px;
+}
+
+modal-open .announcement.modal {
+  display:block;
+}
+
+.modal-title {
+   color: #000;
+}
+
+
