@@ -72,6 +72,12 @@ h4 {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+  .lead {
+    font-size: 16px;
+  }
+}
+
 a {
   color: #444;
   -webkit-transition: 0.3s color;
@@ -210,8 +216,6 @@ textarea.input {
     padding: inherit;
 }
 	
-}
-
 #header.transparent-navbar.fixed-navbar .navbar-brand .logo .logo-alt-img {
   display: none;
 }
@@ -410,7 +414,21 @@ textarea.input {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding: 80px 0px 0px
+  padding: 81px 0px 0px
+}
+
+@media only screen and (max-width: 767px) {
+   #home .home-wrapper {
+     position: absolute;
+     top: 50%;
+     left: 0;
+     right: 0;
+     text-align: center;
+     -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%);
+     padding: 81px 0px 0px
+}
 }
 
 .home-content h1 {
@@ -1236,6 +1254,40 @@ color: #dd0a37;
 ===========================================================*/
 .announcement.modal {
   top:80px;
+}
+
+
+.attention {
+   position:absolute;
+   right:100px;
+   z-index:10;
+   border-radius:10px; 
+    
+}
+
+
+.attention img {
+   max-width:100px;
+   
+}
+
+ .attention h4{
+   color:#000;
+}
+
+@media only screen and (max-width: 767px) {
+   .attention {
+      right:10px;
+      background:#fff;
+      z-index:10;
+      border-radius:10px;
+      opacity:0.6;
+      position:inherit;
+   }
+
+   .attention img {
+      max-width:50px; 
+   }
 }
 
 modal-open .announcement.modal {
