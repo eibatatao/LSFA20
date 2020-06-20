@@ -61,7 +61,7 @@ h2 {
 
 h3 {
   font-size: 22px;
-  color: white;
+  color: #444444;
 }
 
 h4 {
@@ -84,9 +84,8 @@ a {
   transition: 0.3s color;
 }
 
-a:hover, a:focus {
+a:hover{
   text-decoration: none;
-  outline: none;
   color: #ee3d37;
 }
 
@@ -186,6 +185,14 @@ textarea.input {
 	LOGO
 ===========================================================*/
 
+.nav a:focus{
+    
+    outline:auto;
+    background: #ed3237!important;
+    
+    opacity: 0.9;
+    border-radius: 10px;
+}
 .navbar-brand {
   padding: 10px;
   margin: 15px 0px;
@@ -210,6 +217,7 @@ textarea.input {
 }
 
 
+
 .logo-home {
     max-width:90%;
     height:auto;
@@ -229,6 +237,7 @@ textarea.input {
   margin-left:15px;
   margin-right:15px;
 }
+
 
 
 /*=========================================================
@@ -453,6 +462,16 @@ textarea.input {
 	ABOUT
 ===========================================================*/
 
+#about p{
+    text-align: justify;
+}
+
+#about a:focus{
+    background: #000 !important;
+    color:#fff !important;
+    font-weight: bold;
+}
+
 #numbers {
   margin-top: 60px;
 }
@@ -559,7 +578,11 @@ textarea.input {
   transition: 0.3s all;
 }
 
-.speaker:hover {
+a:focus .speaker{
+    opacity: 1;
+    
+}
+.speaker:hover,.speaker:focus {
   opacity: 1;
 }
 
@@ -683,7 +706,7 @@ textarea.input {
 
 .speaker-modal .modal-dialog {
   width: 100%;
-  max-width: 970px;
+  max-width: 90%;
   margin-top: 60px;
   margin-bottom: 60px;
 }
@@ -694,6 +717,7 @@ textarea.input {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
+
 
 .speaker-modal .speaker-modal-close {
   position: absolute;
@@ -760,6 +784,7 @@ textarea.input {
 
 .speaker-modal .speaker-modal-content .speaker-website {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .speaker-modal .speaker-modal-content .speaker-events .speaker-event+.speaker-event {
@@ -900,20 +925,8 @@ textarea.input {
   text-align: center;
 }
 
-/*=========================================================
-	Registration
-===========================================================*/
-.registration p{
-   color:#ccc;
-}
 
-.registration h2{
-   color:#ccc;
-}
 
-.registration h4{
-   color:#ccc;
-}
 
 /*=========================================================
 	Registration
@@ -928,17 +941,120 @@ color: #ccc;
   transition: 0.3s color;
 }
 
-.section-bg+.container a:hover,a:focus {
+.section-bg+.container a:hover {
   text-decoration: none;
-  outline: none;
   color: #ee3d37;
 }
+.section-bg+.container a:focus {
+  text-decoration: none;
+
+  background: #fff; 
+}
+
 color: #ccc;
 }
 
 .section-bg+.container>h3,h2,h1{
 color: #dd0a37;
 }
+
+.registration p{
+   color:#ccc;
+}
+
+.registration h2{
+   color:#ccc;
+}
+
+.registration h4{
+   color:#ccc;
+}
+.registration button{
+  background:rgb(55, 55, 55);
+  border-radius:10px;
+  border:none;
+  padding: 8px;
+  opacity:80%; 
+  color:#999;
+}
+   #registration .registration button:hover {
+     background:#ee3d37;
+     color:#fff;
+   }
+   #registration button a{
+     opacity:100%;
+     color:inherit;
+   }
+
+/*=========================================================
+	PROGRAM
+===========================================================*/
+
+#program .accordion{
+    display:flex;
+}
+
+#program .card{
+    width: 32%;
+    border: solid;
+    display: flex;
+    margin-left: 5px;
+    
+}
+    #program .card .card-header{
+        background: #ee3d37;
+        text-align: center;
+        border: auto;    
+    }
+
+        #program .card .card-header h3{
+            color: #fff;  
+            margin-top: 15px;
+        }
+
+    #program .card .card-body{
+        border: none;    
+    }
+
+#program .schedule ul {
+    list-style: none;
+    margin-left:15px;
+    
+}
+#program .schedule ul li{
+    margin-top: 2px;
+}
+#program .schedule ul li .sched-event{
+ 	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+
+
+#program .schedule ul li span{
+    font-weight: bold;
+}
+#program .schedule ul li .event-hour{
+    text-align: left;
+	padding-left: 0px;
+    word-wrap: break-word;
+    
+}
+#program .schedule ul li .event-desc{
+    /*! position:absolute; */
+	/*! left: 40%; */
+    text-align: left;
+    word-wrap: break-word;
+    margin-left: 15px;
+}
+
+
+#program .speaker .speaker-content > h3 {
+    font-size: 20px;
+        
+}
+
+
 
 
 /*=========================================================
@@ -1240,6 +1356,18 @@ color: #dd0a37;
   .event+.event:before {
     left: 40px;
   }
+    #program .card{
+        width:100%;
+    }
+    #program .card{
+        display:block;
+        width:100%;
+        padding-left: 10px;
+    }
+    #program .accordion{
+        display:block;
+        width:100%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1265,11 +1393,17 @@ color: #dd0a37;
     
 }
 
+    .attention:focus-within {
+       background: #fff; 
+
+    }
+
 
 .attention img {
    max-width:100px;
    
 }
+
 
  .attention h4{
    color:#000;
@@ -1298,4 +1432,17 @@ modal-open .announcement.modal {
    color: #000;
 }
 
+.modal p {
+    text-align: justify;
+}
+/*=========================================================
+	Keyboard accessibility
+===========================================================*/
+a:focus{
+    outline: auto;
+    outline-width: thick !important;
+    background: #fff !important;
+    color: #000 !important;
+    font-weight: bold;
+}
 
