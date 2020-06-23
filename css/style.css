@@ -992,6 +992,7 @@ color: #dd0a37;
 
 #program .accordion{
     display:flex;
+    margin-right: 23px;
 }
 
 #program .card{
@@ -1014,6 +1015,7 @@ color: #dd0a37;
 
     #program .card .card-body{
         border: none;    
+        padding: 1rem 0 1rem 0;
     }
 
 #program .schedule ul {
@@ -1035,7 +1037,7 @@ color: #dd0a37;
     font-weight: bold;
 }
 #program .schedule ul li .event-hour{
-    text-align: left;
+    text-align: center;
 	padding-left: 0px;
     word-wrap: break-word;
     
@@ -1043,7 +1045,7 @@ color: #dd0a37;
 #program .schedule ul li .event-desc{
     /*! position:absolute; */
 	/*! left: 40%; */
-    text-align: left;
+    text-align: center;
     word-wrap: break-word;
     margin-left: 15px;
 }
@@ -1362,11 +1364,13 @@ color: #dd0a37;
     #program .card{
         display:block;
         width:100%;
-        padding-left: 10px;
+        /*! padding-left: 10px; */
+        margin-left: 0;
     }
     #program .accordion{
         display:block;
         width:100%;
+        /*! margin: ; */
     }
 }
 
