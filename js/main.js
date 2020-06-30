@@ -88,7 +88,9 @@
 			offset: '95%'
 		});
 	});
-
+    $(".modal").on('shown.bs.modal', function () {
+        $(this).find("button").focus();
+    });
       /* $(document).ready(function() {
            $('#myModal').modal('show');
         });*/

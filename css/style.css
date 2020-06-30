@@ -705,10 +705,10 @@ a:focus .speaker{
 \*----------------------------*/
 
 .speaker-modal .modal-dialog {
-  width: 100%;
-  max-width: 90%;
+  width: 90%;
   margin-top: 60px;
   margin-bottom: 60px;
+  margin-left: 5%
 }
 
 .speaker-modal .modal-content {
@@ -735,6 +735,11 @@ a:focus .speaker{
   font-size: 24px;
   z-index: 50;
 }
+
+    .speaker-modal .speaker-modal-close:focus {
+      background-color: #000!important;
+      color: #FFF;
+    }
 
 .speaker-modal .speaker-modal-close:after {
   content: "\f00d";
@@ -1000,6 +1005,7 @@ color: #dd0a37;
     border: solid;
     display: flex;
     margin-left: 5px;
+    border-radius:30px;
     
 }
     #program .card .card-header{
@@ -1056,9 +1062,43 @@ color: #dd0a37;
         
 }
 
+#program .speaker-modal .modal-body{
+    padding: 10px;
+}
 
+#program .speaker-modal .accordion{
+    display:block;
+    margin-right: 23px;
+}
 
+#program .speaker-modal .card{
+    margin-left: 0px;
+    width: 100%;
+    
+}
+    #program .speaker-modal .card .card-header{
+        border-top-left-radius: 28px;
+        border-top-right-radius: 28px;
 
+    }
+
+    #program .speaker-modal .schedule{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #program .speaker-modal .schedule ul li .sched-event{
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    #program .speaker-modal .schedule ul li .event-desc{
+        /*! position:absolute; */
+        /*! left: 40%; */
+        text-align: justify;
+        word-wrap: break-word;
+        margin-left: 15px;
+    }
 /*=========================================================
 	SPONSORS
 ===========================================================*/
