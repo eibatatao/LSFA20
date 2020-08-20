@@ -1053,7 +1053,7 @@ color: #dd0a37;
 }
 #program .schedule ul li .sched-event{
  	display: grid;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 31% 69%;
 }
 
 
